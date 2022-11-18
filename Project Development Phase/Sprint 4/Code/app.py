@@ -6,7 +6,7 @@ import sendgrid
 import os
 from sendgrid.helpers.mail import *
 
-SENDGRID_Key = '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'
+SENDGRID_Key = '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'
 
 conn = ibm_db.connect("DATABASE=bludb;HOSTNAME=2d46b6b4-cbf6-40eb-bbce-6251e6ba0300.bs2io90l08kqb1od8lcg.databases.appdomain.cloud;PORT=32328;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt;UID=mkb92240;PWD=AYScqDZ6ZsA260ZJ",'','')
 
@@ -93,8 +93,8 @@ def logout():
   return redirect(url_for('login'))
 
 
-sg = sendgrid.SendGridAPIClient('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')
-from_email = Email("plasmadonoribm@gmail.com")
+sg = sendgrid.SendGridAPIClient('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')
+from_email = Email("munagapatimaheshbabucse2019@citchennai.net")
 
 
 @app.route('/request',methods=['GET','POST'])
